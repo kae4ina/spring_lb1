@@ -4,27 +4,33 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>org.one</groupId>
     <artifactId>lab</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Добавление зависимости Spring Core -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>5.3.23</version> <!-- Убедитесь, что используете последнюю версию -->
         </dependency>
 
-        <!-- Добавление зависимости Spring Context -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.23</version>
         </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.1</version>
+        </dependency>
 
-        <!-- Добавьте другие зависимости Spring по мере необходимости -->
+
     </dependencies>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
