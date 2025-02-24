@@ -3,7 +3,6 @@ package org.one;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-
 @Component
 public class OrganizationData {
     private int employeeId;
@@ -11,24 +10,25 @@ public class OrganizationData {
     private int positionId;
     private double salary;
 
-    // Конструкторы, геттеры и сеттеры
+    // Конструкторы
     public OrganizationData(int employeeId, int departmentId, int positionId, double salary) {
         this.employeeId = employeeId;
         this.departmentId = departmentId;
         this.positionId = positionId;
         this.salary = salary;
     }
-    public OrganizationData(){
+
+    public OrganizationData() {
         this.employeeId = 0;
         this.departmentId = 0;
         this.positionId = 0;
         this.salary = 0;
     }
 
+
     public int getEmployeeId() {
         return employeeId;
     }
-
 
     public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 
 
-//@Component
+@Component
 public class Department {
     private static int idCounter = 0;
     private final int id;
@@ -15,7 +15,7 @@ public class Department {
 
 
     public Department(String name) {
-        this.id=++idCounter;
+        this();
         this.name = name;
     }
 
@@ -42,9 +42,6 @@ public class Department {
     public String toString() {
         return "Department{id=" + id + ", name='" + name + "'} \n";
     }
-  /*  @PostConstruct
-    public void init(){
-        this.name="Managemnet";
-    }*/
+
 
 }
